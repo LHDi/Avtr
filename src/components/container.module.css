@@ -1,0 +1,10 @@
+.container {
+	width: 80%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-radius: 5px;
+	transform: translate(-50%, -50%);
+	background: url("/img/back.jpg");
+	box-shadow: 0px 1px 14px -3px;
+}
