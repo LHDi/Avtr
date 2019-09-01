@@ -5,13 +5,10 @@ const Style = {
 	container: {
 		background: '#fff',
 		display: 'flex',
-		flexWrap: 'wrap',
-		width: '200px',
-		padding: '5px',
-		justifyContent: 'center'
+		justifyContent: 'center',
+		borderRadius: '3px'
 	}
 };
-const shapes = [0,1,2,3,4,5];
 // eslint-disable-next-line react/prop-types
 const Shape = ({index, total, hidden}) => (
 	
@@ -36,13 +33,16 @@ const setShapes = (shapes, selected) => (
 	shapes.map((s, i) =>(<Shape hidden={i!==selected} index={i} total={shapes.length} key={i}/>))
 );
 
-export default function ShapePicker({/* shapes */}) {
+// eslint-disable-next-line react/prop-types
+export default function ShapePicker({shapes, select}) {
 	const [selected, setSelected] = useState(0);
 	const next = (e) => {
 		setSelected((s) => (s+1)%shapes.length);
+		select(selected);
 	};
 	const prev = (e) => {
 		setSelected((s) => (s-1+shapes.length)%shapes.length);
+		select(selected);
 	};
 	return (
 		<div style={Style.container}>

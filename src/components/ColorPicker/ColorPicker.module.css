@@ -1,0 +1,33 @@
+.picker {
+	display: flex;
+	flex-wrap: wrap;
+	width: 200px;
+	background: #fff;
+	justify-content: center;
+	height: 90px;
+	overflow-y: auto;
+	transition: .5s all ease-in-out
+}
+
+.pickr {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	border-radius: 3px;
+	border: 3px solid rgb(203, 214, 224);
+	margin: 5px 10%
+}
+
+.picker::-webkit-scrollbar {
+	width: .3em;
+}
+
+.picker::-webkit-scrollbar-track {
+	background: #fff
+}
+
+.picker::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background-color: darkgrey;
+	outline: 3px solid #fff;
+}
