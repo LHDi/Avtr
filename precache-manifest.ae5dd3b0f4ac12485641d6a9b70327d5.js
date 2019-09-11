@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4158fa0784d0ffbc171c63c3fa2ef9ce",
+    "revision": "b27e6000f3aaa4b94267c98b73a1031c",
     "url": "/Avtr/index.html"
   },
   {
-    "revision": "5daa9cefc1b97122f445",
+    "revision": "29f18b68fa9b4148c731",
     "url": "/Avtr/static/css/main.6f0eac93.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Avtr/static/js/2.543544d9.chunk.js"
   },
   {
-    "revision": "5daa9cefc1b97122f445",
-    "url": "/Avtr/static/js/main.3f73d483.chunk.js"
+    "revision": "29f18b68fa9b4148c731",
+    "url": "/Avtr/static/js/main.9595c32c.chunk.js"
   },
   {
     "revision": "06ba3a55d6b764d42f89",

@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Avtr/static/css/main.6f0eac93.chunk.css",
-    "main.js": "/Avtr/static/js/main.3f73d483.chunk.js",
-    "main.js.map": "/Avtr/static/js/main.3f73d483.chunk.js.map",
+    "main.js": "/Avtr/static/js/main.9595c32c.chunk.js",
+    "main.js.map": "/Avtr/static/js/main.9595c32c.chunk.js.map",
     "runtime~main.js": "/Avtr/static/js/runtime~main.b5ca61dd.js",
     "runtime~main.js.map": "/Avtr/static/js/runtime~main.b5ca61dd.js.map",
     "static/js/2.543544d9.chunk.js": "/Avtr/static/js/2.543544d9.chunk.js",
     "static/js/2.543544d9.chunk.js.map": "/Avtr/static/js/2.543544d9.chunk.js.map",
     "index.html": "/Avtr/index.html",
-    "precache-manifest.7b64a924ab52ddd8c7618d47221eeb24.js": "/Avtr/precache-manifest.7b64a924ab52ddd8c7618d47221eeb24.js",
+    "precache-manifest.ae5dd3b0f4ac12485641d6a9b70327d5.js": "/Avtr/precache-manifest.ae5dd3b0f4ac12485641d6a9b70327d5.js",
     "service-worker.js": "/Avtr/service-worker.js",
     "static/css/main.6f0eac93.chunk.css.map": "/Avtr/static/css/main.6f0eac93.chunk.css.map"
   }
