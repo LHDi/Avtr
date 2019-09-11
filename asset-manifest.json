@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/avtr/static/css/main.6f0eac93.chunk.css",
+    "main.js": "/avtr/static/js/main.bfc5bfc0.chunk.js",
+    "main.js.map": "/avtr/static/js/main.bfc5bfc0.chunk.js.map",
+    "runtime~main.js": "/avtr/static/js/runtime~main.ba71f2e4.js",
+    "runtime~main.js.map": "/avtr/static/js/runtime~main.ba71f2e4.js.map",
+    "static/js/2.543544d9.chunk.js": "/avtr/static/js/2.543544d9.chunk.js",
+    "static/js/2.543544d9.chunk.js.map": "/avtr/static/js/2.543544d9.chunk.js.map",
+    "index.html": "/avtr/index.html",
+    "precache-manifest.be99a8e487193636abe84dab534a121a.js": "/avtr/precache-manifest.be99a8e487193636abe84dab534a121a.js",
+    "service-worker.js": "/avtr/service-worker.js",
+    "static/css/main.6f0eac93.chunk.css.map": "/avtr/static/css/main.6f0eac93.chunk.css.map"
+  }
+}
