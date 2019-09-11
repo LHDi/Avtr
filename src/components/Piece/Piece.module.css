@@ -2,11 +2,14 @@
 	width: 200px;
 	background: #fff; 
 	border-radius: 3px; 
-	display: inline-block; 
 	padding: 3px; 
-	margin: 5px;
+	margin: 5px 0;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-	transition: .3s all ease-in-out
+	transition: .3s all ease-in-out;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .container:hover {

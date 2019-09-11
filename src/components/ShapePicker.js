@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 
 const Style = {
@@ -10,48 +10,64 @@ const Style = {
 	}
 };
 // eslint-disable-next-line react/prop-types
-const Shape = ({index, total, hidden}) => (
+const Shape = ({index, total, hidden, src, uid}) => {
+	const [svg, setSvg] = useState('');
+	useEffect(() => {
+		fetch(src)
+			.then(res => res.text())
+			.then(svg => {
+				setSvg(svg);
+			});
+	});
 	
-	<span style={{
-		position: 'absolute',
-  	width: '80px',
-  	height: '80px',
-  	left: '0px',
-  	top: '0px',
-		background: '#999',
-		transform: `rotateY(${(360/total)*index}deg) translateZ(${80/(2*Math.tan(360/total))}px)`,
-		textAlign: 'center',
-		transition: 'all 1s',
-		lineHeight: '80px',
-		opacity: hidden? 0:1
+	return (
+		<span style={{
+			position: 'absolute',
+			width: '64px',
+			height: '64px',
+			left: '0px',
+			top: '0px',
+			transform: `rotateY(${(360/total)*index}deg) translateZ(${64/(2*Math.tan(360/total))}px)`,
+			transition: 'all .5s',
+			opacity: hidden? 0:1
 
-	}}>{index}</span>
-);
-
-const setShapes = (shapes, selected) => (
+		}} dangerouslySetInnerHTML={{'__html': svg}}>
+				
+		</span>
+	);
+};
+const setShapes = (shapes, selected, uid) => (
 	//shapes[selected]
-	shapes.map((s, i) =>(<Shape hidden={i!==selected} index={i} total={shapes.length} key={i}/>))
+	shapes.map((s, i) =>(<Shape src={'avatars/' + uid + '/' + s + '.svg'} uid={uid} hidden={i!==selected} index={i} total={shapes.length} key={i}/>))
 );
 
 // eslint-disable-next-line react/prop-types
-export default function ShapePicker({shapes, select}) {
-	const [selected, setSelected] = useState(0);
+export default function ShapePicker({shapes, select, selectedShape, uid}) {
+	// eslint-disable-next-line react/prop-types
+	const selectedShapeIndex =  shapes.indexOf(selectedShape)!==-1?shapes.indexOf(selectedShape):0;
+	const [selected, setSelected] = useState(selectedShapeIndex);
 	const next = (e) => {
-		setSelected((s) => (s+1)%shapes.length);
-		select(selected);
+		setSelected((s) => {
+			const next = (s+1)%shapes.length;
+			select(shapes[next]);
+			return next;
+		});
 	};
 	const prev = (e) => {
-		setSelected((s) => (s-1+shapes.length)%shapes.length);
-		select(selected);
+		setSelected((s) => {
+			const prev = (s-1+shapes.length)%shapes.length;
+			select(shapes[prev]);
+			return prev;
+		});
 	};
 	return (
 		<div style={Style.container}>
-			<span style={{height: '80px', lineHeight: '80px'}}>
-				<FaAngleLeft style={{verticalAlign: 'middle'}} cursor="pointer" onClick={prev} color="#0e1b2c" size="1.5em"/>
+			<span style={{height: '64px', lineHeight: '64px'}}>
+				<FaAngleLeft style={{verticalAlign: 'middle'}} cursor="pointer" onClick={prev} color="rgba(122, 137, 151, 0.8)" size="1.5em"/>
 			</span>
 			<div style={{
-				width: '80px',
-				height: '80px',
+				width: '64px',
+				height: '64px',
 				position: 'relative',
 				perspective: '1000px',
 				overflow: 'hidden'
@@ -65,11 +81,11 @@ export default function ShapePicker({shapes, select}) {
 						transition: 'all .3s',
 						transform: 'translateZ(-288px) rotateY(' + selected / shapes.length * -360 + 'deg)'
 					}}>
-					{setShapes(shapes, selected)}
+					{setShapes(shapes, selected, uid)}
 				</div>
 			</div>
-			<span style={{height: '80px', lineHeight: '80px'}}>
-				<FaAngleRight style={{verticalAlign: 'middle'}} cursor="pointer" onClick={next} color="#0e1b2c" height={80} size="1.5em"/>
+			<span style={{height: '64px', lineHeight: '64px'}}>
+				<FaAngleRight style={{verticalAlign: 'middle'}} cursor="pointer" onClick={next} color="rgba(122, 137, 151, 0.8)" height={80} size="1.5em"/>
 			</span>
 		</div>
 	);

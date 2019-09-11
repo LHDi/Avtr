@@ -6,6 +6,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-download-svg": "0.0.4",
     "react-icons": "^3.7.0",
     "react-scripts": "3.1.0"
   },
