@@ -2,7 +2,7 @@
   "name": "avtr",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://elhadi98.github.io/Avtr/demo",
+  "homepage": "http://elhadi98.github.io/Avtr",
   "dependencies": {
     "prop-types": "^15.7.2",
     "react": "^16.9.0",

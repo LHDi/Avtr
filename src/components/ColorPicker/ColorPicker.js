@@ -22,7 +22,7 @@ const Pickr = ({color, selected, handleClick}) => {
 					height: '85%'
 				}}>
 				{selected && <img
-					src="/img/check-mark.svg"
+					src="img/check-mark.svg"
 					alt="checked"
 					style={{width: '100%', height: '100%', padding: '3px', boxSizing: 'border-box'}}
 				/>}
