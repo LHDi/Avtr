@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Avtr/static/css/main.6f0eac93.chunk.css",
-    "main.js": "/Avtr/static/js/main.3f73d483.chunk.js",
-    "main.js.map": "/Avtr/static/js/main.3f73d483.chunk.js.map",
-    "runtime~main.js": "/Avtr/static/js/runtime~main.b5ca61dd.js",
-    "runtime~main.js.map": "/Avtr/static/js/runtime~main.b5ca61dd.js.map",
-    "static/js/2.543544d9.chunk.js": "/Avtr/static/js/2.543544d9.chunk.js",
-    "static/js/2.543544d9.chunk.js.map": "/Avtr/static/js/2.543544d9.chunk.js.map",
-    "index.html": "/Avtr/index.html",
-    "precache-manifest.7b64a924ab52ddd8c7618d47221eeb24.js": "/Avtr/precache-manifest.7b64a924ab52ddd8c7618d47221eeb24.js",
-    "service-worker.js": "/Avtr/service-worker.js",
-    "static/css/main.6f0eac93.chunk.css.map": "/Avtr/static/css/main.6f0eac93.chunk.css.map"
+    "main.css": "/Avtr/demo/static/css/main.6f0eac93.chunk.css",
+    "main.js": "/Avtr/demo/static/js/main.a24810c4.chunk.js",
+    "main.js.map": "/Avtr/demo/static/js/main.a24810c4.chunk.js.map",
+    "runtime~main.js": "/Avtr/demo/static/js/runtime~main.d1d00608.js",
+    "runtime~main.js.map": "/Avtr/demo/static/js/runtime~main.d1d00608.js.map",
+    "static/js/2.543544d9.chunk.js": "/Avtr/demo/static/js/2.543544d9.chunk.js",
+    "static/js/2.543544d9.chunk.js.map": "/Avtr/demo/static/js/2.543544d9.chunk.js.map",
+    "index.html": "/Avtr/demo/index.html",
+    "precache-manifest.52eb7b4f45f2e6ea43b91c926285b524.js": "/Avtr/demo/precache-manifest.52eb7b4f45f2e6ea43b91c926285b524.js",
+    "service-worker.js": "/Avtr/demo/service-worker.js",
+    "static/css/main.6f0eac93.chunk.css.map": "/Avtr/demo/static/css/main.6f0eac93.chunk.css.map"
   }
 }
